@@ -1,5 +1,0 @@
-High-performance computing with VSC
-
-SLURM experience
-
-ARIEL consortium
