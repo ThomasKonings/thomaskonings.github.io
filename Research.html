@@ -21,6 +21,35 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.clear {
+				clear: both;
+			}
+	
+			.box {
+				width: 200px;
+				height: 100px;
+				margin: 10px;
+				float: left;
+			}
+			.container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top of the container */
+        }
+
+        .text {
+            flex: 1;
+            padding-right: 20px; /* Add spacing between text and image */
+        }
+
+        .image {
+            max-width: 100%;
+            box-sizing: border-box; /* Include border width in the width calculation */
+            height: 100%; /* Match the height of the text */
+        }
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -52,16 +81,97 @@
 									<hr class="major" />
 									<h2>PhD research</h2>
 									<p>
-									I specialize in numerical modeling of exoplanet atmospheres with a focus on 
-									analyzing how host star interactions impact their physical and chemical state.
-									 In my previous research, I have explored the effects of stellar flares on 
-									 close-orbiting gas giants and how they affect spectral features in transmission spectra. 
+									The overarching goal of my PhD research is to better understand exoplanet and how
+									 host star interactions impact the physical and chemical state of their atmospheres.
+									 During my PhD, I have led or contributed to different projects.
 									</p>
-									 <p>
-									 Currently, I am involved in the JWST GTO MIRI program and am modeling a 
-									 planet observed by the James Webb Space Telescope (JWST). 
-									 Additionally, I am investigating the survivability of exoplanetary atmospheres during the asymptotic giant branch (AGB) phase of their host star.
-									</p>
+									<div class="clear"></div>
+
+
+									<h4>The impact of stellar flares of hot gas giants </h4>
+									<div class="container">
+										<div class="text">
+											<p>Stellar flares of active M dwarfs can affect the atmospheric composition of close-orbiting gaseous giant planets. 
+												This can introduce a time dependence to measured transmission spectra, which in turn can bias retrieval analyses. 
+												We have investigated the effects of stellar flares on the chemical composition of a tidally-locked, 
+												close-orbiting gaseous planet with an effective temperature of 800 K and considered the 
+												impact on the transmission spectra. We use a two-dimensional thermo-and photochemical kinetics model 
+												that takes into account horizontal transport due to equatorial superrotation, the latter dominating the 
+												circulation patterns of such planets. We explore a variety of flares that differ in energy, duration, 
+												and occurrence frequency.
+											</p>
+											<!-- <p>
+												We find that a high-energy flare event depletes the dayside and evening limb in methane and ammonia by over 3 orders
+												of magnitude, which lowers transit depths by 200 ppm during the first several days after the flare event on 
+												the evening limb spectrum. When advected to the cooler nightside, photodissociation products recombine 
+												and enhance the molar fractions of hydrogen cyanide and acetylene. 
+												The latter molecule causes a strong increase in transit depth (< 600 ppm) on the morning limbs spectrum
+												 around 14 microns for several days after the flare,
+												  although this is strongly coupled to the horizontal wind speed.
+											</p>  -->
+											<p>
+											As a member of the ARIEL consortium, I engange in scientific discussions on follow-up research on this topic
+											in preperation of the ARIEL space mission.
+											</p>
+										</div>
+										<div class="image right">
+											<img src="images/stellarflare.avif" style="max-width: 100%;" alt="">
+											<i>A solar flare with accompanying Coronal Mass Ejection (CME). Credit: www.nasa.gov</i>
+										</div>
+									</div>
+									<div class="clear"></div>
+
+
+
+									<h4>Sulphur chemistry of WASP-107b</h4>
+									<div class="container">
+										<div class="image left">
+											<img src="images/art_hot_jupiter.jpg" style="max-width: 100%;" 
+											alt="Credit: University of Warwick/Mark Garlick">
+											<i>Artist impression of the WASP-107 system with puffy exoplanet WASP-107b. 
+												Credit: Daria Kiseleva / The McGill Tribune</i>
+										</div>
+										<div class="text">
+											<p>As an affiliate of the European JWST MIRI GTO program, I helped analyzing the
+												transmission spectrum of WASP-107b, a super-puff exoplanet, observed with the James Webb Space Telescope (JWST). 
+												By using chemical kinetics codes, we can simulate the expected chemical composition
+												and compare this the observations.
+											</p>
+											<p>
+												The resulting publication is currenlty in review. More explanation will follow.
+											</p>
+										</div>
+									</div>
+									<div class="clear"></div>
+
+									<h4>Planets around AGB stars</h4>
+									<div class="container">
+										<div class="text">
+											<p> The vast majority of planets that we have discovered, orbit main sequence (MS) stars like our Sun.
+												Solar-type stars will eventually evolve off the main sequence and become asymptotic giant branch (AGB) stars, during
+												which the star will increase in size, become much brigher and develop a strong stellar wind.
+												The star's planetary system will likely be affected as 
+												the giant AGB star will induce tidal forces that can change the planetary orbits.
+												Additionally, the extreme brightness will heat the planetary atmosphere and potentially change their
+												chemical composition. Finally, the planet will be embedded in a strong and dense 
+												circumstellar environment.
+											</p>
+											<p>
+												With my research, I try to assess how the planetary atmosphere is affected by the latter through 
+												hydrodynamical modelling.
+												Different scenarios arise, ranging from a complete erosion of the atmospheric gas to 
+												accretion of stellar wind material that enriches atmospheric composition.
+											</p>
+											</div>
+										<div class="image right">
+											<img src="images/figure_stellarEvolution.png" style="max-width: 100%;" 
+											alt="">
+											Characteristic stellar parameters of solar-type stars throughout their evolution.
+										</div>
+									</div>
+									<div class="clear"></div>
+
+
 
 
 
@@ -143,8 +253,6 @@
 											<i>Monthly Notices of the Royal Astronomical Society, 2022</i>
 											</p>
 										</div>
-										
-
 
 									</div>
 
@@ -155,10 +263,10 @@
 									<h2>Talks & posters at conferences/workshops</h2>
 
 									<ul class="actions">
-										<li> <a href="https://nexsci.caltech.edu/workshop/2023/" 
+										<li> <a href="https://nexsci.caltech.edu/workshop/2023/posters/44_ThomasKonings.png" 
 										target="_blank" rel="noopener noreferrer" class="button large">
 											07/2023 &nbsp;|&nbsp; <strong> 2023 Sagan Exoplanet Summer Hybrid
-												Workshop</strong> &nbsp;|&nbsp; California, USA
+												Workshop</strong> &nbsp;|&nbsp; California, USA &nbsp;|&nbsp; <strong>Poster</strong>
 										</a></li>
 									</ul>
 
@@ -166,7 +274,7 @@
 										<li> <a href="https://cpsii.unamur.be/" 
 										target="_blank" rel="noopener noreferrer" class="button large">
 											07/2023 &nbsp;|&nbsp; <strong> Complex Planetary Systems II -
-												 Kavli-IAU Symposium 382</strong> &nbsp;|&nbsp; Namur, Belgium
+												 Kavli-IAU Symposium 382</strong> &nbsp;|&nbsp; Namur, Belgium 
 										</a></li>
 									</ul>
 
@@ -180,15 +288,15 @@
 									<ul class="actions">
 										<li> <a href="https://www.iauga2022.org/" 
 										target="_blank" rel="noopener noreferrer" class="button large">
-											08/2022 &nbsp;|&nbsp; <strong> IAUGA 2022 XXXIst General 
-												Assembly International Astronomical Union</strong> &nbsp;|&nbsp; Busan, Republic of Korea
+											08/2022 &nbsp;|&nbsp; <strong> IAUGA 2022 General 
+												Assembly International Astronomical Union</strong> &nbsp;|&nbsp; Busan, Korea &nbsp;|&nbsp; <strong>Poster & Talk</strong>
 										</a></li>
 									</ul>
 
 									<ul class="actions">
 										<li> <a href="https://aas.org/meetings/aastcs9/exoplanets" 
 										target="_blank" rel="noopener noreferrer" class="button large">
-											06/2022 &nbsp;|&nbsp; <strong> AASTCS 9: Exoplanets IV</strong> &nbsp;|&nbsp; Las Vegas, USA
+											06/2022 &nbsp;|&nbsp; <strong> AASTCS 9: Exoplanets IV</strong> &nbsp;|&nbsp; Las Vegas, USA &nbsp;|&nbsp; <strong>Poster</strong>
 										</a></li>
 									</ul>
 

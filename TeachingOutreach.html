@@ -20,7 +20,33 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.clear {
+				clear: both;
+			}
+	
+			.box {
+				width: 200px;
+				height: 100px;
+				margin: 10px;
+				float: left;
+			}
+			.container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top of the container */
+        }
 
+        .text {
+            flex: 1;
+            padding-right: 20px; /* Add spacing between text and image */
+        }
+
+        .image {
+            max-width: 100%;
+            box-sizing: border-box; /* Include border width in the width calculation */
+            height: 100%; /* Match the height of the text */
+        }
+		</style>
 		
 	</head>
 	<body class="is-preload">
@@ -52,59 +78,77 @@
 									<!-- <span class="image main"><img src="images/Twitter_omslag_pagina.png" alt="" /></span> -->
 
 									<hr class="major" />
+
+									
 									<h2>Outreach & Science communication</h2>
 									
 
 						
-
-
 									<h4>Speaking for the general public</h4>
-									<p><span class="image right"><img src="images/Outreach1.jpg" alt="" /></span>
-										One of the fun things about being a scientist is the ability to inspire others about
-										all the science that is being done in the world.
-										Therefore, I try to enage in outreach activites as much as possible.
-										A non-exhaustive list of outreach activities, catered to the general public, include
-									<ul>
-										<li>Guest lecturing for amateur astronomers (e.g. 
-											<a href="https://www.cozmix.be/nl"
-											 target="_blank" rel="noopener noreferrer">Cozmix</a>)</li>
-										<li>Informative posters (e.g. 
-											<a href="https://www.knalfestival.be/programma/opendeurdag-faculteit-wetenschappen"
-											 target="_blank" rel="noopener noreferrer">KNAL city festival</a>)</li>
-										<li>Popular science blog posts (e.g. 
-											<a href="https://www.linkedin.com/pulse/my-first-peer-reviewed-publication-thomas-konings"
-											 target="_blank" rel="noopener noreferrer">about my research</a>)</li>
-										<li>Various live demo's including an IR camera,
-											<a href="https://www.zooniverse.org/projects/nora-dot-eisner/planet-hunters-tess"
-											 target="_blank" rel="noopener noreferrer">Planet Hunters TESS</a>, ... </li>
-									</ul>
-									</p>
-									
-									<br>
+									<div class="container">
+										<div class="text">
+											<p>
+												One of the fun things about being a scientist is the ability to inspire others about
+												all the science that is being done in the world.
+												Therefore, I try to enage in outreach activites as much as possible.
+												A non-exhaustive list of outreach activities, catered to the general public, include:
+											<ul>
+												<li>Guest lecturing for public observatories (e.g. 
+													<a href="https://www.cozmix.be/nl"
+													 target="_blank" rel="noopener noreferrer">Cozmix</a>, 
+													 <a href="https://www.urania.be/"
+													 target="_blank" rel="noopener noreferrer">Urania</a>
+													 )</li>
+												<li>Informative posters (e.g. 
+													<a href="https://www.knalfestival.be/programma/opendeurdag-faculteit-wetenschappen"
+													 target="_blank" rel="noopener noreferrer">KNAL city festival</a>)</li>
+												<li>Popular science blog posts (e.g. 
+													<a href="https://www.linkedin.com/pulse/my-first-peer-reviewed-publication-thomas-konings"
+													 target="_blank" rel="noopener noreferrer">about my research</a>)</li>
+												<li>Various live demo's including an IR camera,
+													<a href="https://www.zooniverse.org/projects/nora-dot-eisner/planet-hunters-tess"
+													 target="_blank" rel="noopener noreferrer">Planet Hunters TESS</a>, ... </li>
+											</ul>
+											</p>
+										</div>
+										<div class="image right">
+											<img src="images/Outreach1.jpg" style="max-width: 100%;" alt="">
+										</div>
+									</div>
+									<div class="clear"></div>
+
+
 									<h4>Science outreach for young audiences</h4>
-									<p><span class="image right"><img src="images/Nerdland_outreach.jpg" alt="" /></span>
-										Although I enjoy talking science with people of all ages, I find it particularly 
-										fulfilling to share my knowledge and enthusiasm for science with younger 
-										audiences. From interactive science demonstrations to hands-on experiments 
-										and activities, I believe that making science fun and engaging for children 
-										can have a profound impact on their interest and engagement with the subject. 
-										Moreover, inspiring young people to pursue careers in science can help to 
-										shape the future of scientific research and discovery. In the past, I 
-										participated in 
+									<div class="container">
+										<div class="image left">
+											<img src="images/Nerdland_outreach.jpg" style="max-width: 100%;" alt="">
+										</div>
+										<div class="text">
+											<p>
+												Although I enjoy talking science with people of all ages, I find it particularly 
+												fulfilling to share my knowledge and enthusiasm for science with younger 
+												audiences. From interactive science demonstrations to hands-on experiments 
+												and activities, I believe that making science fun and engaging for children 
+												can have a profound impact on their interest and engagement with the subject. 
+												Moreover, inspiring young people to pursue careers in science can help to 
+												shape the future of scientific research and discovery. In the past, I 
+												participated in:
 
-									<ul>
-										<li>Hands-on workshops (e.g. 
-											<a href="https://www.kuleuven.be/kinderuniversiteit/"
-											target="_blank" rel="noopener noreferrer">Children's university</a>)</li>
-										<li>Interactive lectures (e.g. <a href="https://www.nerdlandfestival.be/nl/programma/expeditie-exoplaneet"
-											target="_blank" rel="noopener noreferrer">Nerdland Festival</a>)</li>
-										<li>Various live demo's e.g. operating a telescope
-											(<a href="https://www.kortrijk.be/dagvandewetenschap#:~:text=Op%2027%20november%202022%20was,kinderen%20zelf%20proefjes%20laten%20uitvoeren."
-											target="_blank" rel="noopener noreferrer">Day of science</a>) </li>
+											<ul>
+												<li>Hands-on workshops (e.g. 
+													<a href="https://www.kuleuven.be/kinderuniversiteit/"
+													target="_blank" rel="noopener noreferrer">Children's university</a>)</li>
+												<li>Interactive lectures (e.g. <a href="https://www.nerdlandfestival.be/nl/programma/expeditie-exoplaneet"
+													target="_blank" rel="noopener noreferrer">Nerdland Festival</a>)</li>
+												<li>Various live demo's e.g. operating a telescope
+													(<a href="https://www.kortrijk.be/dagvandewetenschap#:~:text=Op%2027%20november%202022%20was,kinderen%20zelf%20proefjes%20laten%20uitvoeren."
+													target="_blank" rel="noopener noreferrer">Day of science</a>) </li>
+		
+											</ul>											</p>
+										</div>
+									</div>
+									<div class="clear"></div>
 
-									</ul>
-									<br>
-									</p>
 
 									
 									<hr class="major" />
